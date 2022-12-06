@@ -8,23 +8,36 @@
   </head>
   <body>
     <script>
-      function solution(n) {
-        // 0 < n <= 1000
-        // 짝수.. n % 2 == 0
-        // 배열에 담는다?
-        var arr = [];
-        var sum = 0;
-        for (i = 1; i <= 1000; i++) {
-          if (n % 2 == 0) {
-            arr.push(n);
-            sum += arr[i];
-          }
-          return sum;
-        }
-
-        // return answer;
-      }
+      //   function solution(n) {
+      //     // 0 < n <= 1000
+      //     // 짝수.. n % 2 == 0
+      //     // 배열에 담는다?
+      //     var sum = 0;
+      //     for (i = 1; i <= n; i++) {
+      //       if (i % 2 == 0) {
+      //         sum += i;
+      //       }
+      //     }
+      //     return sum;
+      //   }
       //짝수의합
+      // 반복문 활용인데.. 어떻게 잘 활용할지 짱구를 잘 굴려보자 앞으로는..
+      function solution(num_list) {
+        var answer = []; //정답배열
+        var even = []; //짝수배열
+        var odd = []; //홀수배열
+        for (i = 0; i < num_list.length; i++) {
+          if (num_list[i] % 2 == 0) {
+            even.push(num_list[i]);
+          } else if (num_list[i] % 2 != 0) {
+            odd.push(num_list[i]);
+          }
+        }
+        answer.unshift(even.length);
+        answer.push(odd.length);
+        return answer;
+      }
+      //배열 내 짝수와 홀수의 개수
     </script>
   </body>
 </html>
