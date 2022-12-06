@@ -22,22 +22,33 @@
       //   }
       //짝수의합
       // 반복문 활용인데.. 어떻게 잘 활용할지 짱구를 잘 굴려보자 앞으로는..
-      function solution(num_list) {
-        var answer = []; //정답배열
-        var even = []; //짝수배열
-        var odd = []; //홀수배열
-        for (i = 0; i < num_list.length; i++) {
-          if (num_list[i] % 2 == 0) {
-            even.push(num_list[i]);
-          } else if (num_list[i] % 2 != 0) {
-            odd.push(num_list[i]);
-          }
-        }
-        answer.unshift(even.length);
-        answer.push(odd.length);
-        return answer;
-      }
+      //   function solution(num_list) {
+      //     var answer = []; //정답배열
+      //     var even = []; //짝수배열
+      //     var odd = []; //홀수배열
+      //     for (i = 0; i < num_list.length; i++) {
+      //       if (num_list[i] % 2 == 0) {
+      //         even.push(num_list[i]);
+      //       } else if (num_list[i] % 2 != 0) {
+      //         odd.push(num_list[i]);
+      //       }
+      //     }
+      //     answer.unshift(even.length);
+      //     answer.push(odd.length);
+      //     return answer;
+      //   }
       //배열 내 짝수와 홀수의 개수
+      //프로그래머스 다른사람풀이에 기가막힌 답이 있으니 읽어보자..
+
+      //   function solution(numbers) {
+      //     var sum = 0;
+      //     for (i = 0; i < numbers.length; i++) {
+      //       sum += numbers[i];
+      //     }
+      //     return sum / numbers.length;
+      //   }
+      //배열의 평균
+      //배열 어려우면서도 쉬울때가 있구나.....
     </script>
   </body>
 </html>
